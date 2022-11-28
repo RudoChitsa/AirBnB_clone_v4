@@ -1,31 +1,73 @@
-# AirBnB Clone - The Console
-The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+0x06. AirBnB clone - Web dynamic
 
-#### Functionalities of this command interpreter:
-* Create a new object (ex: a new User or a new Place)
-* Retrieve an object from a file, a database etc...
-* Do operations on objects (count, compute stats, etc...)
-* Update attributes of an object
-* Destroy an object
+Resources
+Read or watch:
 
-## Table of Content
-* [Environment](#environment)
-* [Installation](#installation)
-* [File Descriptions](#file-descriptions)
-* [Usage](#usage)
-* [Examples of use](#examples-of-use)
-* [Bugs](#bugs)
-* [Authors](#authors)
-* [License](#license)
+Selector
+Get and set content
+Manipulate CSS classes
+Manipulate DOM elements
+Document ready
+Introduction
+GET & POST request
+HTTP access control (CORS)
+Learning Objectives
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+
+General
+How cool it is to request your own API
+How to modify an HTML element style
+How to get and update an HTML element content
+How to modify the DOM
+How to make a GET request with JQuery Ajax
+How to make a POST request with JQuery Ajax
+How to listen/bind to DOM events
+How to listen/bind to user events
+
+* [Authors](#AUTHORS)
+
 
 ## Environment
 This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 
 ## Installation
-* Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
+* Clone this repository: `git clone "(https://github.com/jzamora5/AirBnB_clone_v3)"
 * Access AirBnb directory: `cd AirBnB_clone`
 * Run hbnb(interactively): `./console` and enter command
 * Run hbnb(non-interactively): `echo "<command>" | ./console.py`
+
+More Info
+Import JQuery
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+Before starting the project…
+You will work on a codebase using Flasgger, you will need to install it locally first before starting the RestAPI:
+
+$ sudo apt-get install -y python3-lxml
+$ sudo pip3 install flask_cors # if it was not installed yet
+$ sudo pip3 install flasgger
+If the RestAPI is not starting, please read the error message. Based on the(ses) error message(s), you will have to troubleshoot potential dependencies issues.
+
+Here some solutions:
+
+jsonschema exception
+$ sudo pip3 uninstall -y jsonschema 
+$ sudo pip3 install jsonschema==3.0.1
+No module named 'pathlib2'
+$ sudo pip3 install pathlib2
+Expose ports from your Vagrant
+In your Vagrantfile, add this line for each port forwarded
+
+# I expose the port 5001 of my vm to the port 5001 on my computer
+config.vm.network :forwarded_port, guest: 5001, host: 5001 
+if you need to expose other ports, same line but you will need to replace the “guest port” (inside your vagrant) and your “host port” (outside your vagrant, used from your browser for example)
+
+It’s important in your project, to use the AirBnB API with the port 5001
+
+
+
+
 
 ## File Descriptions
 [console.py](console.py) - the console contains the entry point of the command interpreter. 
@@ -158,7 +200,9 @@ Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twit
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
-
+Rudo Chitsa - [Github](https://github.com/RudoChitsa)
+Kitesa Merga - [Github](https://github.com/Kitesa)
+  
 Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
